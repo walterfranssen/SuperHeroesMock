@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33103.184
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{1E8CAB01-B9E5-4999-9173-43F093FE2517}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{F6001ACA-07DF-4277-A8F4-04368A924267}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{F0845942-D875-4773-8D69-2318324FA644}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SuperHeroesMock.Application", "SuperHeroesMock.Application\SuperHeroesMock.Application.csproj", "{48BA9C3C-1E1E-4F5A-A85A-366780BF76C8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SuperHeroesMock.Domain", "SuperHeroesMock.Domain\SuperHeroesMock.Domain.csproj", "{C5411467-3590-47B9-86B1-7850D11F5918}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SuperHeroesMock.Repositories", "SuperHeroesMock.Repositories\SuperHeroesMock.Repositories.csproj", "{7D631F97-66E0-4137-9D0C-58C1C2392351}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SuperHeroesMock.Api", "SuperHeroesMock.Api\SuperHeroesMock.Api.csproj", "{FB9E85D3-551A-4C90-99C9-E5963F5193F7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{48BA9C3C-1E1E-4F5A-A85A-366780BF76C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48BA9C3C-1E1E-4F5A-A85A-366780BF76C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48BA9C3C-1E1E-4F5A-A85A-366780BF76C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48BA9C3C-1E1E-4F5A-A85A-366780BF76C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5411467-3590-47B9-86B1-7850D11F5918}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5411467-3590-47B9-86B1-7850D11F5918}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5411467-3590-47B9-86B1-7850D11F5918}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5411467-3590-47B9-86B1-7850D11F5918}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D631F97-66E0-4137-9D0C-58C1C2392351}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D631F97-66E0-4137-9D0C-58C1C2392351}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D631F97-66E0-4137-9D0C-58C1C2392351}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D631F97-66E0-4137-9D0C-58C1C2392351}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB9E85D3-551A-4C90-99C9-E5963F5193F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB9E85D3-551A-4C90-99C9-E5963F5193F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB9E85D3-551A-4C90-99C9-E5963F5193F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB9E85D3-551A-4C90-99C9-E5963F5193F7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{48BA9C3C-1E1E-4F5A-A85A-366780BF76C8} = {F6001ACA-07DF-4277-A8F4-04368A924267}
+		{C5411467-3590-47B9-86B1-7850D11F5918} = {F6001ACA-07DF-4277-A8F4-04368A924267}
+		{7D631F97-66E0-4137-9D0C-58C1C2392351} = {F0845942-D875-4773-8D69-2318324FA644}
+		{FB9E85D3-551A-4C90-99C9-E5963F5193F7} = {1E8CAB01-B9E5-4999-9173-43F093FE2517}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6DC77106-121B-49A0-9A4A-568312E3C194}
+	EndGlobalSection
+EndGlobal
