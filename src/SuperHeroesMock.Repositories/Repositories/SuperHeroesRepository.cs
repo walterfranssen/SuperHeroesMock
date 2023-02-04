@@ -24,9 +24,17 @@ namespace MockApi.Repositories
             };
 
         }
-        public Task<IEnumerable<SuperHero>> GetAll()
+        
+        public Task<IEnumerable<SuperHero>> GetAllAsync(CancellationToken cancellationToken = default)
         {
             return Task.FromResult(superHeroes.AsEnumerable());
+        }
+
+        public Task<SuperHero?> GetByIdAsync(Guid id, CancellationToken cancellationToken = default)
+        {
+            SuperHero? superHero = superHeroes.FirstOrDefault(x => x.Id == id);
+
+            return Task.FromResult(superHero);
         }
     }
 }

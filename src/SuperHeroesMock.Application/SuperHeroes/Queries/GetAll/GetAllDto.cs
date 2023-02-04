@@ -1,8 +1,8 @@
 ﻿namespace MockApi.Application.SuperHeroes.Queries.GetAll
 {
-    public class GetAllDto
+    public class GetAllSuperHeroesDto
     {
-        public Guid Id { get; set; }
-        public string Name { get; set; }
+        public required Guid Id { get; set; }
+        public required string Name { get; set; }
     }
 }
