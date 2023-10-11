@@ -1,5 +1,6 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Options;
 using MockApi.Application.SuperHeroes.Queries.GetAll;
 using SuperHeroesMock.Application.SuperHeroes.Queries.GetById;
 
@@ -19,5 +20,15 @@ public static class EndpointsExtensions
         })
         .WithName("GetSuperheroById")
         .WithOpenApi();
+    }
+
+    public static void AddSecretSuperHeroesEndpoint(this WebApplication app) {
+
+        app.MapGet("/config", ([FromServices] IOptionsSnapshot<SuperHeroDb> options) => {
+            return options.Value;
+        })
+        .WithName("GetAllConfiguratons")
+        .WithOpenApi();
+
     }
 }
