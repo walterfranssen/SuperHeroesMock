@@ -3,21 +3,15 @@ using MockApi.Domain.Abstract;
 
 namespace MockApi.Application.SuperHeroes.Queries.GetAll
 {
-    public class GetAllHandler : IRequestHandler<GetAllQueries, IEnumerable<GetAllSuperHeroesDto>>
+    public class GetAllHandler(ISuperHeroesRepository superHeroesRepository) : IRequestHandler<GetAllQueries, IEnumerable<GetAllSuperHeroesDto>>
     {
-        private readonly ISuperHeroesRepository superHeroesRepository;
-
-        public GetAllHandler(ISuperHeroesRepository superHeroesRepository)
-        {
-            this.superHeroesRepository = superHeroesRepository;
-        }
-
+        private readonly ISuperHeroesRepository superHeroesRepository = superHeroesRepository;
         public async Task<IEnumerable<GetAllSuperHeroesDto>> Handle(GetAllQueries request, CancellationToken cancellationToken)
         {
             var entities = await superHeroesRepository.GetAllAsync();
             if (entities == null) return new List<GetAllSuperHeroesDto>();
 
-            var dtos = entities.Select(x => new GetAllSuperHeroesDto { Id = x.Id, Name = x.Name });
+            var dtos = entities.Select(x => new GetAllSuperHeroesDto(x.Id, x.Name));
             return dtos.ToList();
         }
     }
